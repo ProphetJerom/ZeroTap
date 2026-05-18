@@ -1,0 +1,56 @@
+<?php if (config("homepage_stats")): ?>
+	<section class="py-8">
+        <div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<h2 class="fw-bolder display-5 mb-5 text-center text-md-start"><strong><?php ee("Let <br><span class=\"gradient-primary clip-text\">the numbers</span><br> do the talking") ?>.</strong></h2>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-md-6 mb-5">
+							<div class="text-center bg-primary py-5 px-2 px-lg-5 rounded">
+								<h3 class="h5 text-capitalize"><span class="gradient-primary fw-bolder clip-text"><?php ee('Powering') ?></span></h3>
+								<div class="h1">
+									<span class="counter"><?php echo $count->links ?></span>
+									<span class="counter-extra">+</span>
+								</div>
+								<h3 class="h6 text-capitalize fw-bold"><?php ee('Links') ?></h3>
+							</div>
+						</div>
+						<div class="col-md-6 mb-5">
+							<div class="text-center bg-primary py-5 px-2 px-lg-5 rounded">
+								<h3 class="h5 text-capitalize"><span class="gradient-primary fw-bolder clip-text"><?php ee('Serving') ?></span></h3>
+								<div class="h1">
+									<span class="counter"><?php echo $count->clicks ?></span>
+									<span class="counter-extra">+</span>
+								</div>
+								<h3 class="h6 text-capitalize fw-bold"><?php ee('Clicks') ?></h3>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 mb-5">
+							<div class="text-center bg-primary py-5 px-2 px-lg-5 rounded">
+								<h3 class="h5 text-capitalize"><span class="gradient-primary fw-bolder clip-text"><?php ee('Trusted by') ?></span></h3>
+								<div class="h1">
+									<span class="counter"><?php echo $count->users ?></span>
+									<span class="counter-extra">+</span>
+								</div>
+								<h3 class="h6 text-capitalize fw-bold"><?php ee('Amazing Customers') ?></h3>
+							</div>
+						</div>
+						<div class="col-md-6 mb-5 d-none d-md-block">
+							<a href="<?php echo route('register') ?>">
+								<div class="bg-primary py-5 px-2 px-lg-5 rounded h-100 d-flex align-items-center justify-content-center">
+									<h3 class="h5 text-capitalize">
+										<span class="gradient-primary fw-bolder clip-text"><?php ee('Get Started') ?> <i class="fa fa-chevron-right small"></i></span>
+									</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+<?php endif ?>
